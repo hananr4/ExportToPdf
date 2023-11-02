@@ -11,17 +11,17 @@ using System.Threading.Tasks;
 namespace ExportToPdf.Module.Parameters;
 
 [DomainComponent]
-public class ExportZipParameter: NonPersistentBaseObject
+public class ExportFileParameter: NonPersistentBaseObject
 {
 
     FileData file;
 
-    public ExportZipParameter()
+    public ExportFileParameter()
     {
 
     }
      
-    public ExportZipParameter(Guid oid) : base(oid)
+    public ExportFileParameter(Guid oid) : base(oid)
     {
 
     }
