@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Components.Server.Circuits;
 using DevExpress.ExpressApp.Xpo;
 using ExportToPdf.Blazor.Server.Services;
+using DevExpress.ExpressApp.Core;
+using ExportToPdf.Module.Services;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace ExportToPdf.Blazor.Server;
 
@@ -20,6 +23,8 @@ public class Startup {
     // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
     public void ConfigureServices(IServiceCollection services) {
         services.AddSingleton(typeof(Microsoft.AspNetCore.SignalR.HubConnectionHandler<>), typeof(ProxyHubConnectionHandler<>));
+        services.AddSingleton<NonPersistentObjectStorageService>();
+        services.TryAddEnumerable(ServiceDescriptor.Scoped<IObjectSpaceCustomizer, NonPersistentObjectSpaceCustomizer>());
 
         services.AddRazorPages();
         services.AddServerSideBlazor();
