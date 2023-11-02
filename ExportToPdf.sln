@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExportToPdf.Module", "ExportToPdf.Module\ExportToPdf.Module.csproj", "{0E7B69A4-0B62-496B-A7B3-E608A539F107}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExportToPdf.Blazor.Server", "ExportToPdf.Blazor.Server\ExportToPdf.Blazor.Server.csproj", "{5CAB1650-5CDE-4371-B64F-6AE1D51A9686}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		EasyTest|Any CPU = EasyTest|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E7B69A4-0B62-496B-A7B3-E608A539F107}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E7B69A4-0B62-496B-A7B3-E608A539F107}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E7B69A4-0B62-496B-A7B3-E608A539F107}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{0E7B69A4-0B62-496B-A7B3-E608A539F107}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{0E7B69A4-0B62-496B-A7B3-E608A539F107}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E7B69A4-0B62-496B-A7B3-E608A539F107}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CAB1650-5CDE-4371-B64F-6AE1D51A9686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CAB1650-5CDE-4371-B64F-6AE1D51A9686}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CAB1650-5CDE-4371-B64F-6AE1D51A9686}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{5CAB1650-5CDE-4371-B64F-6AE1D51A9686}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{5CAB1650-5CDE-4371-B64F-6AE1D51A9686}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CAB1650-5CDE-4371-B64F-6AE1D51A9686}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
